@@ -5,11 +5,12 @@ const router = new express.Router();
 
 const clientRoutes = [
   "/",
+  "/advanced-js-loader-map",
+  "/react-google-map",
+  "/simple-js-loader-map",
   "/user-sessions/new",
   "/users/new",
-  "/vanilla-google-map",
-  "/simple-js-loader-map",
-  "/advanced-js-loader-map"
+  "/vanilla-google-map"
 ];
 
 const authedClientRoutes = ["/authed-profile"];
