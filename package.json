@@ -1,0 +1,23 @@
+{
+  "type": "module",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client",
+    "e2e"
+  ],
+  "scripts": {
+    "build:client": "yarn workspace node-google-maps-client build",
+    "dev": "yarn workspace node-google-maps-server dev",
+    "dev:debug": "yarn workspace node-google-maps-server dev:debug",
+    "heroku-postbuild": "yarn workspace node-google-maps-client build",
+    "start": "yarn workspace node-google-maps-server start",
+    "dev:cypress": "yarn workspace node-google-maps-server dev:e2e",
+    "e2e:open": "yarn workspace node-google-maps-e2e e2e:open",
+    "e2e:run": "yarn workspace node-google-maps-e2e e2e:run"
+  },
+  "engines": {
+    "node": "^16.18",
+    "yarn": "1.22.10"
+  }
+}
