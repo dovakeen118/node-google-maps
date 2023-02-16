@@ -9,6 +9,8 @@ import SignInForm from "./authentication/SignInForm";
 import TopBar from "./layout/TopBar";
 import MapIndex from "./maps/MapIndex"
 import VanillaGoogleMap from "./maps/VanillaGoogleMap";
+import SimpleJsApiLoaderGoogleMap from "./maps/SimpleJsApiLoaderGoogleMap";
+import AdvancedJsApiLoaderGoogleMap from "./maps/AdvancedJsApiLoaderGoogleMap";
 
 const App = (props) => {
   const [currentUser, setCurrentUser] = useState(undefined);
@@ -33,6 +35,8 @@ const App = (props) => {
       <Switch>
         <Route exact path="/" component={MapIndex} />
         <Route exact path="/vanilla-google-map" component={VanillaGoogleMap} />
+        <Route exact path="/simple-js-loader-map" component={SimpleJsApiLoaderGoogleMap} />
+        <Route exact path="/advanced-js-loader-map" component={AdvancedJsApiLoaderGoogleMap} />
         <Route exact path="/users/new" component={RegistrationForm} />
         <Route exact path="/user-sessions/new" component={SignInForm} />
       </Switch>
