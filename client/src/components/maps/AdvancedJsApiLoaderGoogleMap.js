@@ -69,7 +69,6 @@ const AdvancedJsApiLoaderGoogleMap = (props) => {
     });
   }, [searchQuery])
 
-
   return (
     <>
       <h1>Advanced JS API Loader Google Maps</h1>

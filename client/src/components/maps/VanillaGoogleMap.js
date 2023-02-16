@@ -19,7 +19,7 @@ const VanillaGoogleMap = (props) => {
 
   useEffect(() => {
     initMap()
-  })
+  }, [])
 
   return (
     <>
