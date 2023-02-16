@@ -6,7 +6,6 @@ const SimpleJsApiLoaderGoogleMap = (props) => {
   
   const loader = new Loader({
     apiKey: "AIzaSyBraMYwUbKzwtWbXX2s4r4ENgPHJ32f28o",
-    version: "weekly",
     libraries: ["places"]
   });
 
