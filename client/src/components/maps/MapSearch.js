@@ -1,29 +1,31 @@
-import React, { useState } from "react"
+import React, { useState } from "react";
 
 const MapSearch = (props) => {
-  const [searchInput, setSearchInput] = useState("")
-  
+  const [searchInput, setSearchInput] = useState("");
+
   const handleChange = (event) => {
-    setSearchInput(event.currentTarget.value)
-  }
+    setSearchInput(event.currentTarget.value);
+  };
 
   const handleSearch = () => {
-    props.setSearchQuery(searchInput)
-  }
+    props.setSearchQuery(searchInput);
+  };
 
   return (
-    <>
-      <label htmlFor="search">
-        <input
-          id="search"
-          type="text"
-          onChange={handleChange}
-        />
-      </label>
+    <div className="callout">
+      <h4>What do you want to search for?</h4>
 
-      <button className="button" onClick={handleSearch}>Search</button>
-    </>
-  )
-}
+      <div className="grid-x">
+        <label htmlFor="search" className="cell small-10">
+          <input id="search" type="text" onChange={handleChange} />
+        </label>
 
-export default MapSearch
+        <button className="button cell auto" onClick={handleSearch}>
+          Search
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default MapSearch;
